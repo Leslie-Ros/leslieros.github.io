@@ -3,7 +3,6 @@
   box-shadow: 0px 3px 5px 0px $grey;
 }
 
-@mixin box_shadow_inset(){
-  box-shadow: 0 0 65px $grey inset;
+@mixin box_shadow_inset($color){
+  box-shadow: 0 0 65px $color inset;
 }
- 

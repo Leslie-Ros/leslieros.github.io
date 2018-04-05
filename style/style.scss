@@ -7,20 +7,48 @@
 body{
     font-family: "Quicksand";
 }
+
+a {
+    color: $white;
+  }
 section{
     padding: 80px 20vw;
     display: block;
     h3 {
-      background: linear-gradient(to right, $cyan , $black);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block;
-      width: auto;
+//      text-shadow: 2px 2px 5px $grey;
+      font-size: 35px;
+      letter-spacing: 5px;
+      margin-bottom: 50px;
     }
     p{
       text-align: justify;
       margin-bottom: 20px;
     }
+    ul{
+      list-style-type: none;
+      li{
+        margin-bottom: 20px;
+      }
+    }
+}
+
+.entreprise, .date {
+  color: $cyan;
+  font-weight: bold;
+}
+
+.intitule{
+  color: $black;
+  font-weight: bold;
+}
+
+.description {
+  color: $black;
+  font-family: "Quicksand";
+}
+
+.alpha {
+    background-color: transparent;
 }
 
 #home{
@@ -48,11 +76,40 @@ section{
 #profil{
   background-image: url(../img/bp.png);
   background-repeat: repeat;
+  @include box_shadow_inset($grey);
 }
 
-#experience, #competences{
-    @include box_shadow_inset;
+#profil, #formation{
+    color: $white;
+    .description{
+      color: $white;
+    }
+    h3{
+      text-shadow: 2px 2px 35px $white;
+    }
 }
+
+#competences{
+  h3{
+    color: $cyan;
+  }
+}
+
+#formation{
+  background-image: url(../img/Grey_Background.jpg);
+  background-repeat: repeat;
+  @include box_shadow_inset($black_black);
+}
+
+#contact {
+    background-color: $white;
+    background-image: url(../img/pano.JPG);
+    background-repeat: no-repeat;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
 
 
 /* Add a black background color to the top navigation */
@@ -91,15 +148,4 @@ nav {
         text-align: center;
         display: inline;
     }
-}
-
-
-.entreprise, .date, .intitule {
-  color: $cyan;
-  font-weight: bold;
-}
-
-.description {
-  color: $black;
-  font-family: "Quicksand";
 }
