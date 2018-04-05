@@ -1,0 +1,105 @@
+@import "gatherer";
+
+
+
+
+// Content
+body{
+    font-family: "Quicksand";
+}
+section{
+    padding: 80px 20vw;
+    display: block;
+    h3 {
+      background: linear-gradient(to right, $cyan , $black);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      width: auto;
+    }
+    p{
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+}
+
+#home{
+  h1{
+    font-size: $font_size_title_big;
+    letter-spacing: 5px;
+    padding : 4px 20px 0 20px;
+    text-align: center;
+    color: $cyan;
+    margin-bottom: 20px;
+  }
+
+  h2{
+    letter-spacing: 5px;
+    color: $grey;
+    font-size: $font_size_subtitle;
+  }
+//  background-image: url(img/home_att.png);
+  padding-bottom: 300px;
+  text-align: center;
+  padding-top: 280px;
+  box-sizing: border-box;
+}
+
+#profil{
+  background-image: url(../img/bp.png);
+  background-repeat: repeat;
+}
+
+#experience, #competences{
+    @include box_shadow_inset;
+}
+
+
+/* Add a black background color to the top navigation */
+nav {
+    background-color: $grey;
+    font-family: "Quicksand";
+    width: 100%;
+    letter-spacing: 3px;
+    position: fixed;
+    box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    display: block;
+    ul {
+        width: 1080px;
+        max-width: 1080px;
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        list-style-type: disc;
+        li{
+            font-size: 17px;
+            display: inline-block;
+            width: auto;
+            padding : 10px;
+            text-align: center;
+            color: $white;
+            &:hover {
+                box-shadow: 0px 6px 30px 0 $black;
+                cursor: pointer;
+                z-index: 1;
+            }
+        }
+    }
+    a {
+        color: $white;
+        text-align: center;
+        display: inline;
+    }
+}
+
+
+.entreprise, .date, .intitule {
+  color: $cyan;
+  font-weight: bold;
+}
+
+.description {
+  color: $black;
+  font-family: "Quicksand";
+}

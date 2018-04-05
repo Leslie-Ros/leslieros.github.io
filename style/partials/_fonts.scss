@@ -1,0 +1,29 @@
+/* Déclaration de la police */
+@font-face {
+font-family: "Quicksand";
+src: url('../fonts/Quicksand-Regular.ttf');
+}
+
+@font-face {
+font-family: 'Chicle';
+src: url('../fonts/Chicle-Regular.ttf');
+}
+
+@font-face {
+font-family: "Franklin";
+src: url('../fonts/Franklin-Regular.ttf');
+}
+
+/* Déclaration de la police version "gras" */
+@font-face {
+font-family: "Quicksand";
+font-weight: bold;
+src: url('../fonts/Quicksand-Bold.ttf');
+}
+
+$font_size_title_big : 65px;
+$font_size_subtitle : 50px;
+
+h1, h2, h3{
+  font-family: 'Franklin';
+}
