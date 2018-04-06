@@ -59,6 +59,8 @@ section{
     text-align: center;
     color: $cyan;
     margin-bottom: 20px;
+//    animation: test 5s infinite;
+//    text-shadow: 0 0 20px black;
   }
 
   h2{
@@ -73,23 +75,51 @@ section{
   box-sizing: border-box;
 }
 
+@keyframes test {
+  0% {
+    text-shadow: 4px 4px 20px $cyan;
+  }
+
+  33% {
+    text-shadow: -4px 4px 20px $cyan;
+  }
+
+  66%   {
+    text-shadow: -4px -4px 20px $cyan;
+  }
+
+  100%  {
+    text-shadow: 4px -4px 20px $cyan;
+  }
+
+}
+
 #profil{
   background-image: url(../img/bp.png);
   background-repeat: repeat;
   @include box_shadow_inset($grey);
+  color: $white;
+  .description{
+    color: $white;
+  }
+  h3{
+    text-shadow: 0px 0px 25px $turquoise;
+  }
 }
 
-#profil, #formation{
-    color: $white;
-    .description{
-      color: $white;
-    }
-    h3{
-      text-shadow: 2px 2px 35px $white;
-    }
-}
 
 #competences{
+  .contentWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .competences{
+    width: 33.33%;
+  }
+  ul{
+    padding-left: 0;
+  }
   h3{
     color: $cyan;
   }
@@ -99,17 +129,43 @@ section{
   background-image: url(../img/Grey_Background.jpg);
   background-repeat: repeat;
   @include box_shadow_inset($black_black);
+  color: $cream;
+  .description{
+    color: $cream;
+  }
+  h3{
+    text-shadow: 0px 0px 65px $black_black;
+  }
 }
 
 #contact {
-    background-color: $white;
-    background-image: url(../img/pano.JPG);
-    background-repeat: no-repeat;
-    color: $white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  @include box_shadow_inset($grey);
+  text-shadow: 0 0 20px $black_black;
+  padding-bottom: 0;
+  background-color: $white;
+  background-image: url(../img/pano_ph-min.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .contentWrapper{
+    font-size: 35px;
+  }
+  a{
+    text-decoration: underline;
+  }
+  footer {
+    margin-top: 200px;
+    p{
+      text-align: center;
+    }
+  }
  }
+
+
 
 
 /* Add a black background color to the top navigation */
