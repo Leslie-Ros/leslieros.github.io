@@ -117,7 +117,7 @@ section{
     justify-content: space-between;
   }
   .competences{
-    width: 26%;
+    width: 28%;
   }
   ul{
     padding-left: 0;
@@ -261,6 +261,12 @@ nav {
     }
     h2 {
       font-size: 25px;
+    }
+  }
+
+  #competences{
+    .competences{
+      width: 49%;
     }
   }
 
