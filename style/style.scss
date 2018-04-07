@@ -52,6 +52,11 @@ section{
 }
 
 #home{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
   h1{
     font-size: $font_size_title_big;
     letter-spacing: 5px;
@@ -67,12 +72,9 @@ section{
     letter-spacing: 5px;
     color: $grey;
     font-size: $font_size_subtitle;
+    text-align: center;
   }
 //  background-image: url(img/home_att.png);
-  padding-bottom: 300px;
-  text-align: center;
-  padding-top: 280px;
-  box-sizing: border-box;
 }
 
 @keyframes test {
@@ -115,7 +117,7 @@ section{
     justify-content: space-between;
   }
   .competences{
-    width: 33.33%;
+    width: 30%;
   }
   ul{
     padding-left: 0;
@@ -245,17 +247,20 @@ nav {
   section{
     padding: 50px;
     font-size: $small-font-size-descr;
-    h1 {
-      font-size: 30px;
-    }
-    h2 {
-      font-size: 25px;
-    }
     h3 {
       font-size: 30px;
     }
     h5{
       font-size: 16px;
+    }
+  }
+
+  #home{
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 25px;
     }
   }
 

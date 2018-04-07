@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+
 				// NAVIGATION
 
 				$('#nav-profil').click(function(){
@@ -23,6 +23,7 @@ $(document).ready(function(){
 					return false;
 				});
 				$('#nav-contact').click(function(){
+					$("nav ul").removeClass("open");
 					$('html, body').animate({scrollTop : $('#contact').position().top },1000);
 					return false;
 				});
