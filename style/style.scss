@@ -170,6 +170,7 @@ section{
 
 /* Add a black background color to the top navigation */
 nav {
+    height: 40px;
     background-color: $grey;
     font-family: "Quicksand";
     width: 100%;
@@ -204,4 +205,43 @@ nav {
         text-align: center;
         display: inline;
     }
+    #nav-burger {
+        display: none;
+      }
+}
+
+@media all and (max-width: 679px){
+
+	.open {
+		top: -40px; // Height of the ul
+	}
+
+	nav{
+		#nav-burger {
+			display: block;
+			position: relative;
+			z-index: 2;
+			left: 10px;
+			width: 40px;
+			cursor: pointer;
+		}
+    ul{
+  			width: 100%;
+  			display: flex;
+  			flex-direction: column;
+  			@include box-shadow;
+        background-color: $grey;
+  			top: -300px; // Height of the cumulated li roughly + safe space
+  			transition: top 0.5s;
+  			li{
+  				&:hover {
+  					z-index: 1;
+  				}
+  			}
+  		}
+	}
+
+  #contact{
+    background-size: 250%;
+  }
 }
