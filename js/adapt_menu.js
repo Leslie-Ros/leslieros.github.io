@@ -15,7 +15,7 @@ function toggleNav() {
 
 toggleNav();
 
-function closeNav() {
+/*function closeNav() {
 
     // TODO factorize with top file code
     let listItems = $("nav ul li");
@@ -26,10 +26,10 @@ function closeNav() {
         // Close nav on li click
         listItems[i].click(function(){
             // Close nav
-            $("nav ul").removeClass("open")
+            $("nav ul").removeClass("open");
         });
     }
 
 }
 
-closeNav();
+closeNav();*/
