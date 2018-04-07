@@ -141,7 +141,7 @@ section{
 }
 
 #contact {
-  @include box_shadow_inset($grey);
+  @include box_shadow_inset($black);
   text-shadow: 0 0 20px $black_black;
   padding-bottom: 0;
   background-color: $grey;
