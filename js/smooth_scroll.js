@@ -27,4 +27,8 @@ $(document).ready(function(){
 					$('html, body').animate({scrollTop : $('#contact').position().top },1000);
 					return false;
 				});
+				$('#backToTop').click(function(){
+					$('html, body').animate({scrollTop : $('#home').position().top },1000);
+					return false;
+				});
       })
